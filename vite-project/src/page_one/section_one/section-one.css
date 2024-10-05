@@ -2,6 +2,7 @@
 .section-one{
     width: 100vw;
     height: 70vh;
+    background-image: url(../../assets/first-screen__bgc.png);
 }
 .section-one-container{
     width: 75vw;

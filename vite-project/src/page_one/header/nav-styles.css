@@ -9,7 +9,8 @@ html{
 }
 nav{
     width: 100vw;
-    height: 254px;
+    height: 253px;
+    background-image: url(../../assets/first-screen__bgc.png);
 }
 .top-nav{
     height: 150px;
