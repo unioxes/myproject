@@ -1,0 +1,32 @@
+.nav-position{
+    width: 100vw;
+    height: 253px;
+    position: absolute;
+    background-color: rgba(24, 64, 167, 1);
+    bottom: 667px;
+}
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    width: 200px;
+    background-color: #f0f4ff;
+}
+.sidebar div {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(186, 198, 229);
+    color: white;
+}
+.sidebar div.active {
+    background-color: #0033cc;
+    color: #ffffff;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}

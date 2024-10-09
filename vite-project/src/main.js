@@ -57,3 +57,47 @@ export const ways = [
         number: '06'
     }
 ]
+
+const buttons = document.querySelectorAll('.sidebar div');
+const title = document.getElementById('title');
+const description = document.getElementById('description');
+
+// Данные для замены текста
+const sections = {
+    btn0: {
+        title: 'huinya',
+        description: 'escho huinya'
+    },
+    btn1: {
+        title: 'Деятельность компании',
+        description: 'Информация о деятельности компании, включающая проекты и инициативы, а также будущие планы развития.'
+    },
+    btn2: {
+        title: 'Акционерам',
+        description: 'Актуальная информация для акционеров, включая отчеты, собрания и дивидендную политику.'
+    },
+    btn3: {
+        title: 'Инвесторам',
+        description: 'Раздел для инвесторов с ключевыми показателями, стратегическими планами и инвестиционными возможностями.'
+    },
+    btn4: {
+        title: 'Контакты',
+        description: 'Свяжитесь с нами для получения дополнительной информации или вопросов по нашим услугам.'
+    }
+};
+
+// Добавление события на клик для каждой кнопки
+buttons.forEach(div => {
+    div.addEventListener('click', () => {
+        // Удаление активного класса у всех кнопок
+        buttons.forEach(div => div.classList.remove('active'));
+        
+        // Добавление активного класса текущей кнопке
+        div.classList.add('active');
+
+        // Обновление заголовка и текста
+        const section = sections[div.id];
+        title.textContent = section.title;
+        description.textContent = section.description;
+    });
+});

@@ -10,7 +10,6 @@ function App() {
   return (
     <>
           <SectionOne/>
-          <Container />
           <SectionTwo/>
           <SectionThree />
           <SectionFour />

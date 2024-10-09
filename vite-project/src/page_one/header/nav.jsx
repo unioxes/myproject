@@ -22,14 +22,14 @@ function Nav(){
             </div>
             <div className='bottom-nav'>
                 <ul className='text-nav'>
-                    <li><Link to={'/'}>{nav_text[1].about_company}</Link></li>
-                    <li><Link to={''}>{nav_text[1].deyat}</Link></li>
-                    <li><Link to={'/personal-header'}>{nav_text[1].pers}</Link></li>
-                    <li><Link to={''}>{nav_text[1].client}</Link></li>
-                    <li><Link to={''}>{nav_text[1].invest}</Link></li>
-                    <li><Link to={''}>{nav_text[1].press}</Link></li>
-                    <li><Link to={''}>{nav_text[1].torg}</Link></li>
-                    <li><Link to={''}>{nav_text[1].contact}</Link></li>
+                    <li><Link className='color' to={'/'}>{nav_text[1].about_company}</Link></li>
+                    <li><Link className='color' to={''}>{nav_text[1].deyat}</Link></li>
+                    <li><Link className='color' to={'/personal-header'}>{nav_text[1].pers}</Link></li>
+                    <li><Link className='color' to={''}>{nav_text[1].client}</Link></li>
+                    <li><Link className='color' to={''}>{nav_text[1].invest}</Link></li>
+                    <li><Link className='color' to={''}>{nav_text[1].press}</Link></li>
+                    <li><Link className='color' to={''}>{nav_text[1].torg}</Link></li>
+                    <li><Link className='color' to={''}>{nav_text[1].contact}</Link></li>
                 </ul>
             </div>
         </nav>
